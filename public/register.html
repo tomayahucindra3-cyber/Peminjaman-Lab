@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrasi Mahasiswa · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="auth-wrap">
+      <div class="brand-title">
+        <h1>Registrasi Mahasiswa</h1>
+        <p>Buat akun untuk mengajukan peminjaman lab</p>
+      </div>
+
+      <div class="card">
+        <div id="alert" class="alert"></div>
+
+        <form id="register-form">
+          <div class="field">
+            <label for="name">Nama Lengkap</label>
+            <input id="name" name="name" type="text" placeholder="Nama Anda" required />
+          </div>
+          <div class="field">
+            <label for="nim">NIM</label>
+            <input id="nim" name="nim" type="text" placeholder="cth. 2024002" required />
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Minimal 6 karakter"
+              required
+            />
+            <div class="hint">Password minimal 6 karakter.</div>
+          </div>
+          <button class="btn btn-block" type="submit">Daftar</button>
+        </form>
+
+        <div class="auth-footer">
+          Sudah punya akun? <a href="/">Login di sini</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

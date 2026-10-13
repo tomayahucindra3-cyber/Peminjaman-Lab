@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ajukan Peminjaman · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+
+    <main class="container">
+      <h1 class="page-title">Ajukan Peminjaman Lab</h1>
+
+      <div class="card">
+        <div id="alert" class="alert"></div>
+
+        <form id="loan-form">
+          <div class="field">
+            <label for="labId">Pilih Lab</label>
+            <select id="labId" name="labId" required>
+              <option value="">-- Pilih laboratorium --</option>
+            </select>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="date">Tanggal</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="purpose">Keperluan</label>
+              <input
+                id="purpose"
+                name="purpose"
+                type="text"
+                placeholder="cth. Praktikum Jaringan"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="startTime">Jam Mulai</label>
+              <input id="startTime" name="startTime" type="time" required />
+            </div>
+            <div class="field">
+              <label for="endTime">Jam Selesai</label>
+              <input id="endTime" name="endTime" type="time" required />
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Kirim Pengajuan</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/ajukan.js"></script>
+  </body>
+</html>

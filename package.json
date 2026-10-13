@@ -1,0 +1,21 @@
+{
+  "name": "sistem-informasi-peminjaman-laboratorium",
+  "version": "1.0.0",
+  "description": "Sistem Informasi Peminjaman Laboratorium untuk kampus (Node.js + Express + file JSON)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "lab",
+    "peminjaman",
+    "express",
+    "json-database"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}

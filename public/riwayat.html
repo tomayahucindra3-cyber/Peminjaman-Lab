@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Riwayat Peminjaman · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+
+    <main class="container">
+      <h1 class="page-title">Riwayat Pengajuan Saya</h1>
+
+      <div class="card">
+        <div id="alert" class="alert"></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Lab</th>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th>Keperluan</th>
+                <th>Status</th>
+                <th>Alasan</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="loan-rows"></tbody>
+          </table>
+        </div>
+        <div id="empty" class="empty" hidden>Belum ada pengajuan peminjaman.</div>
+      </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/riwayat.js"></script>
+  </body>
+</html>

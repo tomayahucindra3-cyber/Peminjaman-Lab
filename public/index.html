@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="auth-wrap">
+      <div class="brand-title">
+        <h1>Sistem Informasi Peminjaman Laboratorium</h1>
+        <p>Silakan login untuk melanjutkan</p>
+      </div>
+
+      <div class="card">
+        <div id="alert" class="alert"></div>
+
+        <form id="login-form">
+          <div class="field">
+            <label for="identifier">Username / NIM</label>
+            <input
+              id="identifier"
+              name="identifier"
+              type="text"
+              placeholder="admin atau 2024001"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="••••••••"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <button class="btn btn-block" type="submit">Login</button>
+        </form>
+
+        <div class="auth-footer">
+          Belum punya akun? <a href="/register">Daftar sebagai mahasiswa</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

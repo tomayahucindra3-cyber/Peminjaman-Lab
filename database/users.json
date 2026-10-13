@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "role": "admin",
+    "username": "admin",
+    "name": "Administrator Laboratorium",
+    "passwordHash": "$2a$10$RnfWw1P5YhRnR6Z9bbpcf.9BX8o9iF64VTYtDI/h1M/UHMyl2Pdoe"
+  },
+  {
+    "id": 2,
+    "role": "mahasiswa",
+    "name": "Budi Santoso",
+    "nim": "2024001",
+    "passwordHash": "$2a$10$CLgPNGl6GbGPlZ79su75hOny2wsmhj3vzq/7kGAhjqSxUjsRI9.da"
+  }
+]

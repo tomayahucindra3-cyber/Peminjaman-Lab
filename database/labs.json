@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Lab Komputer A",
+    "location": "Gedung Teknik Lantai 2",
+    "capacity": 40
+  },
+  {
+    "id": 2,
+    "name": "Lab Elektronika",
+    "location": "Gedung Teknik Lantai 1",
+    "capacity": 24
+  },
+  {
+    "id": 3,
+    "name": "Lab Jaringan Komputer",
+    "location": "Gedung Komputer Lantai 3",
+    "capacity": 32
+  }
+]

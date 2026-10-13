@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daftar Lab · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+
+    <main class="container">
+      <h1 class="page-title">Daftar Laboratorium</h1>
+
+      <div class="card">
+        <div class="toolbar">
+          <div class="field">
+            <label for="search">Cari nama lab</label>
+            <input id="search" type="search" placeholder="Ketik nama lab..." />
+          </div>
+        </div>
+
+        <div id="alert" class="alert"></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Lab</th>
+                <th>Lokasi</th>
+                <th>Kapasitas</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="lab-rows"></tbody>
+          </table>
+        </div>
+        <div id="empty" class="empty" hidden>Tidak ada lab yang cocok dengan pencarian.</div>
+      </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/labs.js"></script>
+  </body>
+</html>

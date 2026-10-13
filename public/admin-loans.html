@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengajuan Peminjaman · Sistem Peminjaman Laboratorium</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+
+    <main class="container">
+      <h1 class="page-title">Pengajuan Peminjaman</h1>
+
+      <div class="card">
+        <div id="alert" class="alert"></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Mahasiswa</th>
+                <th>NIM</th>
+                <th>Lab</th>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th>Keperluan</th>
+                <th>Status</th>
+                <th>Alasan</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="loan-rows"></tbody>
+          </table>
+        </div>
+        <div id="empty" class="empty" hidden>Belum ada pengajuan peminjaman.</div>
+      </div>
+    </main>
+
+    <!-- Modal alasan penolakan -->
+    <div class="modal-backdrop" id="reject-modal">
+      <div class="modal">
+        <h3>Tolak Pengajuan</h3>
+        <div class="field">
+          <label for="reject-reason">Alasan Penolakan</label>
+          <textarea
+            id="reject-reason"
+            rows="3"
+            placeholder="Tulis alasan penolakan..."
+          ></textarea>
+        </div>
+        <div id="modal-alert" class="alert"></div>
+        <div class="modal-actions">
+          <button class="btn btn-secondary" type="button" id="btn-cancel-reject">Batal</button>
+          <button class="btn btn-danger" type="button" id="btn-confirm-reject">Tolak</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/admin-loans.js"></script>
+  </body>
+</html>

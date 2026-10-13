@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "userId": 2,
+    "labId": 1,
+    "date": "2026-10-13",
+    "startTime": "08:00",
+    "endTime": "10:00",
+    "purpose": "Praktikum Basis Data",
+    "status": "menunggu",
+    "rejectReason": "",
+    "createdAt": "2026-10-12T13:44:51.654Z"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "labId": 2,
+    "date": "2026-10-14",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "purpose": "Praktikum Rangkaian Digital",
+    "status": "disetujui",
+    "rejectReason": "",
+    "createdAt": "2026-10-12T13:44:51.654Z"
+  },
+  {
+    "id": 3,
+    "userId": 2,
+    "labId": 3,
+    "date": "2026-10-15",
+    "startTime": "13:00",
+    "endTime": "15:00",
+    "purpose": "Latihan Konfigurasi Router",
+    "status": "ditolak",
+    "rejectReason": "Lab sedang dalam perawatan pada tanggal tersebut.",
+    "createdAt": "2026-10-12T13:44:51.654Z"
+  },
+  {
+    "id": 4,
+    "userId": 2,
+    "labId": 1,
+    "date": "2026-10-13",
+    "startTime": "09:30",
+    "endTime": "10:15",
+    "purpose": "uts",
+    "status": "menunggu",
+    "rejectReason": "",
+    "createdAt": "2026-10-13T01:18:10.301Z"
+  }
+]
